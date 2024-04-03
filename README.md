@@ -9,7 +9,8 @@ It is a user authentication web application. The application has built with back
 To begin with, You need to clone project and entry into backend and run:
 
 1. composer install
-2. php artisan key:generate
+2. cp .env.example .env
+3. php artisan key:generate
 
 What is more, You neet to install Passport package:
 
