@@ -19,18 +19,25 @@ php artisan key:generate
 ```
 
 What is more, You neet to install Passport package:
-
-1. composer require laravel/passport
-2. php artisan migrate
-3. php artisan passport:install
+```sh
+composer require laravel/passport
+```
+```sh
+php artisan migrate
+```
+```sh
+php artisan passport:install
+```
 
 ## Need for ReactJS (Frontend)
 
 To begin with, You need to entry into fronend and must be create .env file and set:
+```sh
 APP_REACT_API_BASE_URL= base_url/api
-
+```
 Example:APP_REACT_API_BASE_URL=http://127.0.0.1:8000/api
 
 Run this command:
-
+```sh
 npm install
+```
