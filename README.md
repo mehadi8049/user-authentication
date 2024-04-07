@@ -7,11 +7,17 @@ It is a user authentication web application. The application has built with back
 ## Need for Laravel (Backend)
 
 To begin with, You need to clone project and entry into backend and run:
-
+```
 1. composer install
-2. cp .env.example .env
-3. php artisan key:generate
+```sh
 
+```
+2. cp .env.example .env
+```sh
+
+```
+3. php artisan key:generate
+```sh
 What is more, You neet to install Passport package:
 
 1. composer require laravel/passport
