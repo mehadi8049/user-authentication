@@ -14,8 +14,9 @@ composer install
 ```sh
 cp .env.example .env
 ```
-
-3. php artisan key:generate
+```php
+php artisan key:generate
+```
 
 What is more, You neet to install Passport package:
 
