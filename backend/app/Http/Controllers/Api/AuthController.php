@@ -44,14 +44,14 @@ class AuthController extends Controller
                     'status' => false,
                     'errorMessage' => 'Sorry Invalid Email or Password',
                     'data' => [],
-                ]);
+                ],422);
             }
         } catch (\Exception $e) {
             return response()->json([
                 'status' => false,
                 'message' => $e->getMessage(),
                 'data' => [],
-            ]);
+            ],$e->getCode());
         }
     }
     /**
@@ -91,7 +91,7 @@ class AuthController extends Controller
                 'status' => false,
                 'message' => $e->getMessage(),
                 'data' => [],
-            ]);
+            ],$e->getCode());
         }
     }
 

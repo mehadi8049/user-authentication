@@ -31,9 +31,11 @@ export default function Login() {
     }else{
       if(response?.errorMessage){
         setErrorMessage(response?.errorMessage)
+        setErrors({})
       }else{
         const message=JSON.parse(response.message);
         setErrors(prev=>({...prev,...message}))
+        setErrorMessage(null)
       }
     }
   }
