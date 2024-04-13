@@ -18,13 +18,10 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-What is more, You neet to install Passport package:
-```sh
-composer require laravel/passport
-```
 ```sh
 php artisan migrate
 ```
+
 ```sh
 php artisan passport:install
 ```
